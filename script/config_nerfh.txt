@@ -1,0 +1,28 @@
+############################################### NeRF-Hist training example Cambridge ###############################################
+expname=nerfh
+basedir=../logs/kings
+datadir=../data/Cambridge/KingsCollege
+dataset_type=Cambridge
+lrate_decay=5
+trainskip=2
+testskip=1
+df=4
+load_pose_avg_stats=True
+NeRFH=True
+encode_hist=True
+# render_test=True # add this for eval
+
+############################################### NeRF-Hist training example 7-Scenes ###############################################
+# expname=nerfh
+# basedir=../logs/heads
+# datadir=../data/7Scenes/heads
+# dataset_type=7Scenes
+# lrate_decay=0.754
+# trainskip=5
+# testskip=50
+# df=4
+# load_pose_avg_stats=True
+# NeRFH=True
+# encode_hist=True
+# # testskip=1 # add this for eval
+# # render_test=True # add this for eval

@@ -1,0 +1,7 @@
+{
+    "near":0,
+    "far":4,
+    "pose_scale": 1,
+    "pose_scale2": 1,
+    "move_all_cam_vec": [0.0, 0.0, 0.0]
+}
