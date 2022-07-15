@@ -1,8 +1,8 @@
-# DFNet
-DFNet: Enhance Absolute Pose Regression with Direct Feature Matching (ECCV 2022)
-**[Shuai Chen](https://scholar.google.com/citations?user=c0xTh_YAAAAJ&hl=en), [Xinghui Li](https://scholar.google.com/citations?user=XLlgbBoAAAAJ&hl=en), [Zirui Wang](https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en), and [Victor Prisacariu](https://scholar.google.com/citations?user=GmWA-LoAAAAJ&hl=en)**
+# DFNet: Enhance Absolute Pose Regression with Direct Feature Matching
 
-**[Paper](https://arxiv.org/abs/2204.00559)**
+**[Shuai Chen](https://scholar.google.com/citations?user=c0xTh_YAAAAJ&hl=en), [Xinghui Li](https://scholar.google.com/citations?user=XLlgbBoAAAAJ&hl=en), [Zirui Wang](https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en), and [Victor Prisacariu](https://scholar.google.com/citations?user=GmWA-LoAAAAJ&hl=en) (ECCV 2022)**
+
+**Project Page | [Paper](https://arxiv.org/abs/2204.00559)**
 
 [![DFNet](imgs/DFNet.png)](https://arxiv.org/abs/2204.00559)
 
