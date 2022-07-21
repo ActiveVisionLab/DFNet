@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="DFNet">
+  <meta name="author" content="Shuai Chen and Xinghui Li and Zirui Wang and Victor Adrian Prisacariu">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <meta name="google-site-verification" content="JBKlcsa_OIsJMSW_b9Tv4dXqKDXLYXfAEntWJ8nXCc4" />
+  
+  <title>DFNet: Enhance Absolute Pose Regression with Direct Feature Matching</title>
+
+  <!-- Bootstrap core CSS -->
+  <link
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+  img { 
+    width: 100%; 
+  }
+  .paper-title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .authors-list .name {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .authors-list .affiliation {
+    font-size: 0.8em;
+  }
+  </style>
+</head>
+
+<body style="width: 100%; max-width: 1024px; margin-right: auto; margin-left: auto;">
+<main role="main" class="container">
+  <div class="paper-title">
+  <!-- title -->
+  <div class="row">
+    <div class="col">
+      <h2 class="name text-center">DFNet</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p class="long-name text-center">
+        <h4 class="name text-center">Enhance Absolute Pose Regression with Direct Feature Matching </h4>
+      </p>
+      <!-- <br> -->
+      <p class="name text-center" style="color:grey">
+          ECCV 2022
+      </p>
+      
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Authors -->
+  <div class="authors-list">
+    <div class="row">
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=c0xTh_YAAAAJ&hl=en"
+           target="_blank" >Shuai Chen</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=XLlgbBoAAAAJ&hl=en"
+           target="_blank" >Xinghui Li</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en"
+           target="_blank" >Zirui Wang</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="http://www.robots.ox.ac.uk/~victor/"
+           target="_blank">Victor Adrian Prisacariu</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col text-center">
+    <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2204.00559" role="button">Paper</a>
+    <a class="btn btn-outline-primary" href="https://github.com/ActiveVisionLab/DFNet" role="button">Code</a>
+    <!-- <a class="btn btn-outline-primary" href="https://www.robots.ox.ac.uk/~shuaic/direct-pn2021/paper_models.tar.gz" role="button">Pre-trained</a> -->
+    <button type="button" class="btn btn-outline-secondary" disabled>Pre-trained</button>
+  </div>
+  <br>
+
+  <br>
+
+  <div class="row">
+    <div class="col">
+
+      <img src="DFNet.png" alt="DFNet" width=50% >
+
+<!--       <h4>Supplementary</h4>
+      <video id="v0" width="100%" autoplay loop muted>
+        <source src="supp_video.mp4" type="video/mp4" />
+      </video> -->
+
+      <h4>Abstract</h4>
+      <p class="text-justify">
+        We introduce a camera relocalization pipeline that combines absolute pose regression (APR) and direct feature matching. By incorporating exposure-adaptive novel view synthesis, our method successfully addresses photometric distortions in outdoor environments that existing photometric-based methods fail to handle. With domain-invariant feature matching, our solution improves pose regression accuracy using semi-supervised learning on unlabeled data. In particular, the pipeline consists of two components: Novel View Synthesizer and DFNet. The former synthesizes novel views compensating for changes in exposure and the latter regresses camera poses and extracts robust features that close the domain gap between real images and synthetic ones. Furthermore, we introduce an online synthetic data generation scheme. We show that these approaches effectively enhance camera pose estimation both in indoor and outdoor scenes. Hence, our method achieves a state-of-the-art accuracy by outperforming existing single-image APR methods by as much as 56%, comparable to 3D structure-based methods.
+      </p>
+      <br>
+      <h4>Supplementary Video</h4>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video controls>
+          <source src="supp_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col">
+      <h4>Citation</h4>
+      <pre>
+      @inproceedings{chen2022dfnet,
+        title={{DFN}et: {E}nhance Absolute Pose Regression with Direct Feature Matching},
+        author={Chen, Shuai and Li, Xinghui and Wang, Zirui and Prisacariu, Victor},
+        booktitle={ECCV},
+        year={2022}
+      }
+      </pre>
+  </div>
+  </div>
+
+</main>
+</body>
+</html>
