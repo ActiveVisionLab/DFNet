@@ -2,7 +2,7 @@
 
 **[Shuai Chen](https://scholar.google.com/citations?user=c0xTh_YAAAAJ&hl=en), [Xinghui Li](https://scholar.google.com/citations?user=XLlgbBoAAAAJ&hl=en), [Zirui Wang](https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en), and [Victor Prisacariu](https://scholar.google.com/citations?user=GmWA-LoAAAAJ&hl=en) (ECCV 2022)**
 
-** [Project Page](https://dfnet.active.vision) | [Paper](https://arxiv.org/abs/2204.00559)**
+**[Project Page](https://dfnet.active.vision) | [Paper](https://arxiv.org/abs/2204.00559)**
 
 [![DFNet](imgs/DFNet.png)](https://arxiv.org/abs/2204.00559)
 
@@ -72,8 +72,11 @@ python train.py --config config_dfnetdm.txt --eval --testskip=1 --pretrain_model
 ```
 
 ## Pre-trained model
-It's coming. Please stay tuned :)
-<!-- We currently provide the 7-Scenes models in our paper. You can download our paper models using this [link](https://www.robots.ox.ac.uk/~shuaic/direct-pn2021/paper_models.tar.gz). We suggest the models to be put in a new directory (`./logs/`) of the project -->
+We provide the 7-Scenes and Cambridge pre-trained models [here](https://www.robots.ox.ac.uk/~shuaic/DFNet2022/pretrain_models.tar.gz). Some models have slight better results than our paper reported. We suggest the models to be put in a new directory (`./logs/`) of the project.
+
+Notice we additionally provided Cambridge's Great Court scene models, although we didn't include the results in our main paper for fair comparisons with other works. 
+
+Due to my limited resource, my pre-trained models are trained using 3080ti or 1080ti. I noticed earlier that the model's performance might vary slightly (could be better or worse) when inferencing with different types of GPUs, even using the exact same model. Therefore, all experiments on the paper are reported based on the same GPUs as they were trained.
 
 ## Acknowledgement
 We thank Michael Hobley, Theo Costain, Lixiong Chen, and Kejie Li for their generous discussion on this work.
