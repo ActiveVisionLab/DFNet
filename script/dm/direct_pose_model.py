@@ -91,8 +91,8 @@ def PoseLoss(args, pose_, pose, device):
     return pose_loss
 
 def load_exisiting_model(args, isFeatureNet=False):
-    ''' Load a pretrained PoseNet model '''
-    if isFeatureNet==False: # load posenet
+    ''' Load a pretrained DFNet model '''
+    if isFeatureNet==False: # load the Pose Estimator F
         if args.DFNet_s:
             model = PoseNet3()
             model.load_state_dict(torch.load(args.pretrain_model_path))
@@ -101,7 +101,7 @@ def load_exisiting_model(args, isFeatureNet=False):
             model.load_state_dict(torch.load(args.pretrain_model_path))
         return model
     else:
-        if args.DFNet_s: # load featurenet
+        if args.DFNet_s: # load the Feature Extractor G
             model = FeatureNet3()
             model.load_state_dict(torch.load(args.pretrain_featurenet_path))
         else:

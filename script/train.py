@@ -103,24 +103,21 @@ def train():
         print("please choose dataset_type: 7Scenes or Cambridge, exiting...")
         sys.exit()
 
-    ### pose regression module
-    if args.pretrain_model_path == '':
-        print('training PoseNet from scratch')
-        model = FeatureNet()
-    else:
-        # load pretrained FeatureNet model
-        model = load_exisiting_model(args)
+    ### pose regression module, here requires a pretrained DFNet for Pose Estimator F
+    assert(args.pretrain_model_path != '') # make sure to add the pretrained model with --pretrain_model_path
+    # load pretrained DFNet model
+    model = load_exisiting_model(args)
 
     if args.freezeBN:
         model = freeze_bn_layer(model)
     model.to(device)
 
-    ### feature extraction module
-    # load pretrained FeatureNet model
+    ### feature extraction module, here requires a pretrained DFNet for Feature Extractor G using --pretrain_featurenet_path
     if args.pretrain_featurenet_path == '':
-        print('load FeatureNet from PoseNet')
+        print('Use the same DFNet for Feature Extraction and Pose Regression')
         feat_model = load_exisiting_model(args)
-    else:
+    else: 
+        # you can optionally load different pretrained DFNet for feature extractor and pose estimator
         feat_model = load_exisiting_model(args, isFeatureNet=True)
 
     feat_model.eval()
@@ -149,15 +146,15 @@ def eval():
         print("please choose dataset_type: 7Scenes or Cambridge, exiting...")
         sys.exit()
     
-    # load pretrained PoseNet model
+    # load pretrained DFNet_dm model
     model = load_exisiting_model(args)
     if args.freezeBN:
         model = freeze_bn_layer(model)
     model.to(device)
 
-    print(len(val_dl.dataset))
+    print(len(test_dl.dataset))
 
-    get_error_in_q(args, val_dl, model, len(val_dl.dataset), device, batch_size=1)
+    get_error_in_q(args, test_dl, model, len(test_dl.dataset), device, batch_size=1)
 
 if __name__ == '__main__':
     if args.eval:
