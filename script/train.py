@@ -104,7 +104,7 @@ def train():
         sys.exit()
 
     ### pose regression module, here requires a pretrained DFNet for Pose Estimator F
-    assert(args.pretrain_model_path != '') # make sure to add the pretrained model with --pretrain_model_path
+    assert(args.pretrain_model_path != '') # make sure to add a valid PATH using --pretrain_model_path
     # load pretrained DFNet model
     model = load_exisiting_model(args)
 
