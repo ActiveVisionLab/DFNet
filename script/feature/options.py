@@ -111,7 +111,7 @@ def config_parser():
     # training options
     parser.add_argument("--precrop_iters", type=int, default=0,help='number of steps to train on central crops')
     parser.add_argument("--precrop_frac", type=float,default=.5, help='fraction of img taken for central crops')
-    parser.add_argument("--epochs", type=int, default=600,help='number of epochs to train')
+    parser.add_argument("--epochs", type=int, default=2000,help='number of epochs to train')
     parser.add_argument("--poselossonly", action='store_true', help='eval model')
     parser.add_argument("--tripletloss", action='store_true', help='use triplet loss at training featurenet, this is to prevent catastophic failing')
     parser.add_argument("--triplet_margin", type=float,default=1., help='triplet loss margin hyperparameter')
