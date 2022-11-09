@@ -87,9 +87,9 @@ Most of our code is built upon [Direct-PoseNet](https://github.com/ActiveVisionL
 Please cite our paper and star this repo if you find our work helpful. Thanks!
 ```
 @inproceedings{chen2022dfnet,
-  title={{DFN}et: {E}nhance Absolute Pose Regression with Direct Feature Matching},
+  title={DFNet: Enhance Absolute Pose Regression with Direct Feature Matching},
   author={Chen, Shuai and Li, Xinghui and Wang, Zirui and Prisacariu, Victor},
-  booktitle={ECCV},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
   year={2022}
 }
 ```
