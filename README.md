@@ -93,3 +93,14 @@ Please cite our paper and star this repo if you find our work helpful. Thanks!
   year={2022}
 }
 ```
+This code builds on previous camera relocalization pipelines, namely Direct-PoseNet. Please consider citing:
+```
+@inproceedings{chen2021direct,
+  title={Direct-PoseNet: Absolute pose regression with photometric consistency},
+  author={Chen, Shuai and Wang, Zirui and Prisacariu, Victor},
+  booktitle={2021 International Conference on 3D Vision (3DV)},
+  pages={1175--1185},
+  year={2021},
+  organization={IEEE}
+}
+```
